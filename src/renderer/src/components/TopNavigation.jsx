@@ -9,7 +9,7 @@ function TopNavigation() {
     const { darkMode, toggleDarkTheme } = useContext(ThemeContext)
     return (
         <>
-            <div className="nav navbar sticky-top shadow px-4">
+            <header className="nav navbar sticky-top px-4 bg-light-subtle shadow">
                 <a
                     href="/"
                     className="d-flex align-items-center link-body-emphasis text-decoration-none col"
@@ -70,7 +70,7 @@ function TopNavigation() {
                     </div>
                     <ThemeSwitch />
                 </div>
-            </div>
+            </header>
         </>
     )
 }
