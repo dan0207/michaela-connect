@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import ServiceDesk from './pages/ServiceDesk'
@@ -7,24 +8,32 @@ import NotFound from './pages/NotFound'
 import MainLayout from './layouts/MainLayout'
 import AuthLayout from './layouts/AuthLayout'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/servicedesk" element={<ServiceDesk />} />
-        </Route>
+    useEffect(() => {
+        AOS.init()
+        AOS.refresh()
+    }, [])
 
-        <Route element={<AuthLayout />}>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Route>
+    return (
+        <>
+            <Routes>
+                <Route element={<MainLayout />}>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/servicedesk" element={<ServiceDesk />} />
+                </Route>
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
-  )
+                <Route element={<AuthLayout />}>
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                </Route>
+
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </>
+    )
 }
 
 export default App

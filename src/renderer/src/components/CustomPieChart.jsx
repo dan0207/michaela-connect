@@ -32,7 +32,6 @@ function CustomPieChart({ data, title }) {
                                 data={data}
                                 cx="50%"
                                 cy="50%"
-                                labelLine={false}
                                 label={renderCustomizedLabel}
                                 outerRadius={100}
                                 dataKey="value"
@@ -41,7 +40,7 @@ function CustomPieChart({ data, title }) {
                                     <Cell
                                         key={`cell-${index}`}
                                         stroke="#000000"
-                                        strokeWidth={3}
+                                        strokeWidth={2}
                                         fill={COLORS[index % COLORS.length]}
                                     />
                                 ))}

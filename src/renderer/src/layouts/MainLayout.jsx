@@ -8,7 +8,8 @@ function MainLayout() {
             <TopNavigation />
             <div className="d-flex">
                 <SideNavigation />
-                <div className="m-4 shadow-lg border rounded-3 w-100 overflow-y-auto vh-100">
+                {/* <div className="p-4 overflow-y-auto vh-100"> */}
+                <div className="p-4">
                     <Outlet />
                 </div>
             </div>
