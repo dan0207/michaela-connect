@@ -33,7 +33,7 @@ function CustomPieChart({ data, title }) {
                                 cx="50%"
                                 cy="50%"
                                 label={renderCustomizedLabel}
-                                outerRadius={100}
+                                outerRadius={130}
                                 dataKey="value"
                             >
                                 {data.map((entry, index) => (
@@ -45,8 +45,8 @@ function CustomPieChart({ data, title }) {
                                     />
                                 ))}
                             </Pie>
-                            <Tooltip />
-                            <Legend iconType="circle" />
+                            {/* <Tooltip />
+                            <Legend iconType="circle" /> */}
                         </PieChart>
                     </ResponsiveContainer>
                 </div>

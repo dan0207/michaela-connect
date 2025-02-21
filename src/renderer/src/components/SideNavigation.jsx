@@ -7,11 +7,7 @@ function SideNavigation() {
     const { darkMode, toggleDarkTheme } = useContext(ThemeContext)
     return (
         <>
-            <div
-                className="navbar-expand-lg pt-5 sticky-top vh-100 bg-body-tertiary shadow-lg"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-            >
+            <div className="navbar-expand-lg pt-5 sticky-top vh-100 bg-body-tertiary shadow-lg">
                 <div className="h-100">
                     <div
                         className="offcanvas offcanvas-start nav nav-pills mb-auto"

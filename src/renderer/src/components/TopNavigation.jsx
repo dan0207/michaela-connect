@@ -10,11 +10,7 @@ function TopNavigation() {
     const { darkMode, toggleDarkTheme } = useContext(ThemeContext)
     return (
         <>
-            <div
-                className="nav navbar fixed-top bg-light-subtle shadow"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-            >
+            <div className="nav navbar fixed-top bg-light-subtle shadow">
                 <button
                     className="btn border-0 p-0 d-block d-lg-none"
                     type="button"

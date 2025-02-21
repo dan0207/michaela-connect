@@ -10,21 +10,14 @@ function Dashboard() {
 
     return (
         <>
-            <div
-                className="mt-5 shadow-lg border rounded-3"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-            >
+            <div className="mt-5 shadow-lg border rounded-3">
                 <div className="bg-primary text-light p-1 mt-3 text-center">
                     <span className="fs-3 fw-semibold ms-3">IT Department</span>
                 </div>
                 <div className="row m-0 p-3">
                     <div className="row m-0 col-xl-8 p-2">
                         <div className="col-xl-4 p-3">
-                            <div
-                                className="card shadow rounded-4 mb-3 text-center h-100"
-                                data-aos="fade-in"
-                            >
+                            <div className="card shadow rounded-4 mb-3 text-center h-100">
                                 <div className="card-header text-uppercase fw-semibold">
                                     Overdue Tickets
                                 </div>
